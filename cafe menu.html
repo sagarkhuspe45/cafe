@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="bootstrap.css">
+	<script src="jquery.js"></script>
+	<script src="popper.js"></script>
+	<script src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+		$(document).ready(function(){
+  		$('[data-toggle="popover"]').popover();      
+		});
+	</script>
+
+    <style type="text/css">
+        .carousel-inner img {
+     		width: 100%;
+      		height: 460px;
+ 		}
+		#plan:hover{
+			text-decoration: underline;
+			color:#ff471a; 
+		}
+
+		#zoom:hover{
+ 			-webkit-transform: scaleX(-1);
+  			transform: scaleX(-1);
+ 		}
+	</style>
+</head>
+<body>
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/logo4-removebg-preview.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 70px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-info" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item " ><a class="nav-link"  href="index.html" style="width: 120px; text-align: center;">HOME</a></li>
+					<li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;" ><a class="nav-link"  href="cafe menu.html" style="width: 120px; text-align: center;">CAFE MENU</a></li>
+					<li class="nav-item"><a class="nav-link"  href="service.html" style="width: 140px; text-align: center;">SERVICES</a></li>
+					<li class="nav-item"><a class="nav-link"  href="product.html" style="width: 120px; text-align: center;">PRODUCTS</a></li>
+					<li class="nav-item"><a class="nav-link"  href="gallery.html" style="width: 130px; text-align: center;">GALLERY</a></li>
+					<li class="nav-item"><a class="nav-link"  href="contact.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+
+    <section>
+        <br>
+        <div class="container">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+					<li data-target="#demo" data-slide-to="3"></li>
+				   
+				  </ul>
+				<!-- The slideshow -->
+				  <div class="carousel-inner">
+	
+					  <div class="carousel-item active">
+						<a href="#"><img src="img/menu.png" alt="menu" width="1100" height="460"></a>
+					</div>
+	
+					<div class="carousel-item">
+						  <a href="#"><img src="img/menu2.png" alt="menu" width="1100" height="460"></a>
+					</div>
+	
+					<div class="carousel-item">
+						  <a href="#"><img src="img/menu3.png" alt="menu" width="1100" height="460"></a>
+					</div>
+
+                    <div class="carousel-item">
+                        <a href="#"><img src="img/menu4.png" alt="menu" width="1100" height="460"></a>
+                  </div>
+	
+					
+	
+					
+				  </div>
+				<!-- Left and right controls -->
+				  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				  </a>
+			</div><br><br>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <p style="font-size: 23px; line-height: 28px; text-align: center;"><b></b> I'd be happy to help you with a cafe menu. Here's a sample menu that includes a variety of popular cafe items: <br>
+                </p>
+            </div>	
+        </div>	 
+    </div>			
+</div><br>
+
+<div class="container">
+    <div class="cont2" id="">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 style="text-align: center;">- List Of Items -</h1>
+            </div>
+        </div><br>
+        
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="" style="border:3px solid  #f90101; border-radius: 20px; padding: 15px 5px 5px 5px;">
+                    <a href="#"><h3 id="plan" style="text-align: center; color:  black;"> Beverages
+                    </h3></a>
+                    <a href="#"><img id="zoom" src="img/selection-of-different-coffee-type.jpg" class="img-thumbnail img-fluid mx-auto d-block" height="250" width="450" style="border-radius: 20px;"></a>
+                    
+                    <p style="text-align: justify; font-size: 18px; padding: 8px 10px 5px 10px;">
+                        <i>- Espresso ($3.50) <br>
+                            - Macchiato ($4.25) <br>
+                            - Cappuccino ($5.00) <br>
+                            - Latte ($5.25) <br>
+                            - Mocha ($5.75) <br>
+                            - Drip Coffee ($2.75) <br>
+                            - Tea ($2.50) <br>
+                            - Hot Chocolate ($4.00) <br>
+                            - Fresh Juice ($5.50) <br>
+                        </i></p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="" style="border:3px solid  #f90101; border-radius: 20px; padding: 15px 5px 3px 5px;">
+                    <a href="#"><h3 id="plan" style="text-align: center; color: black;"> Breakfast Items </h3></a>
+                    <a href="#"><img id="zoom" src="img/entertainercafe.jpg" class="img-thumbnail img-fluid mx-auto d-block" height="250" width="550" style="border-radius: 20px;"></a>
+                    
+                    <p style="text-align: justify; font-size: 18px; padding: 8px 10px 5px 10px;">
+                        <i> - Avocado Toast ($7.50) <br>
+                            - Eggs Benedict ($9.50) <br>
+                            - Overnight Oats ($6.50) <br>
+                            - Yogurt Parfait ($7.00) <br>
+                            - Breakfast Burrito ($8.50) <br>
+                            - Muffins ($3.00) <br>
+                            - Scones ($3.50) <br>
+                            - Grilled Cheese ($8.00) <br>
+                            - Sandwiches ($9.50) <br>
+                             </i></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br><br>
+
+<div class="container">
+    <div>
+    <div id="list1">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 style="text-align: center;">- List Of Items -</h1>
+            </div>
+        </div><br>
+        
+        <div class="row">	
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div style="border:3px solid  #f86c08; border-radius: 20px; " class="bg-light">
+                    <h3 style="text-align: center; border-bottom: 3px solid  #f86c08; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; ">Coffee</h3>
+                    <ul style="padding-left: 100px; font-size: 19px;">
+                        <li>Espresso</li>
+                        <li>Macchiato</li>
+                        <li>Cortado</li>
+                        <li>Cappuccino</li>
+                        <li>Latte</li>
+                        <li>Mocha</li>
+                        <li>Americano</li>
+                        <li>Cold Brew Coffee</li>
+                        <li>Caramel Macchiato</li>
+                        <li>Hazelnut Coffee</li>
+                        <li>Coconut Coffee</li>
+                        <li>Amaretto Coffee</li>
+                        <li>Vanilla Latte</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div style="border:3px solid  #f86c08; border-radius: 20px;" class="bg-light">
+                    <h3 style="text-align: center; border-bottom: 3px solid  #f86c08; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; "> Burger Meal </h3>
+                    <ul style="padding-left: 100px; font-size: 19px;">
+                        <li>Cheeseburger Meal</li>	
+                        <li>Hamburger Meal</li>	
+                        <li>Bacon Cheeseburger Meal</li>	
+                        <li>BBQ Bacon Burger Meal</li>	
+                        <li>Mushroom Swiss Burger Meal</li>	
+                        <li>Spicy Southwestern Burger Meal</li>	
+                        <li>Grilled Chicken Burger Meal</li>	
+                        <li>Crispy Chicken Burger Meal</li>	
+                        <li>Black Bean Burger Meal</li>	
+                        <li>Portobello Mushroom Burger Meal</li>	
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div style="border:3px solid  #f86c08; border-radius: 20px;" class="bg-light">
+                    <h3 style="text-align: center; border-bottom: 3px solid  #f86c08; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; ">Pizza </h3>
+                    <ul style="padding-left: 100px; font-size: 19px;">
+                        <li>Margherita</li>
+                        <li>Pepperoni </li>
+                        <li>Hawaiian </li>
+                        <li>Quattro Formaggi</li>
+                        <li>Veggie</li>
+                        <li>Pepperoni and Sausage</li>
+                        <li>BBQ Chicken </li>
+                        <li>Taco Pizza </li>
+                        <li>Vegan Margherita</li>
+                        <li>Gluten-Free Veggie</li>
+                        <li>Mac'n Cheese</li>
+                        <li>Mushroom Truffle </li>
+                        <li>Pesto Chicken</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div> <br> <br>
+
+<div class="container">
+    <div>
+    <div id="list2">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 style="text-align: center;">- List Of Items  -</h1>
+            </div>
+        </div><br>
+        
+        <div class="row">	
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div style="border:3px solid  #f86c08; border-radius: 20px; " class="bg-light">
+                    <h3 style="text-align: center; border-bottom: 3px solid  #f86c08; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; ">Sandwichs</h3>
+                    <ul style="padding-left: 100px; font-size: 19px;">
+                        <li>Grilled Cheese</li>
+                        <li>Club Sandwich</li>
+                        <li>Reuben</li>
+                        <li>Ham and Cheese</li>
+                        <li>Chicken Sandwich</li>
+                        <li>Grilled Veggie</li>
+                        <li>Veggie Delight</li>
+                        <li>Tofu Sandwich </li>
+                        <li>Chicken Tikka </li>
+                        <li>Cubano Grilled </li>
+                        <li>Italian Sub</li>
+                        <li>BLT (bacon, lettuce, tomato) </li>
+                        <li>Croque Monsieur</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div style="border:3px solid  #f86c08; border-radius: 20px;" class="bg-light">
+                    <h3 style="text-align: center; border-bottom: 3px solid  #f86c08; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; "> Frappes </h3>
+                    <ul style="padding-left: 100px; font-size: 19px;">
+                        <li>Coffee Frappe </li>	
+                        <li>Caramel Frappe </li>	
+                        <li>Mocha Frappe  </li>	
+                        <li>Vanilla Coffee Frappe</li>	
+                        <li>Hazelnut Coffee Frappe   </li>	
+                        <li>Strawberry Frappe </li>	
+                        <li>Mango Frappe </li>	
+                        <li>Banana  Frappe </li>	
+                        <li>Pineapple Frappe </li>	
+                        <li>Peach  Frappe </li>	
+                        <li>Chocolate  Frappe </li>	
+                        <li>Double Chocolate Frappe </li>	
+                        <li>White Chocolate Frappe </li>	
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div style="border:3px solid  #f86c08; border-radius: 20px;" class="bg-light">
+                    <h3 style="text-align: center; border-bottom: 3px solid  #f86c08; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; ">Mocktails </h3>
+                    <ul style="padding-left: 100px; font-size: 19px;">
+                        <li>Virgin Piña Colada</li>
+                        <li>Shirley Temple  </li>
+                        <li>Virgin Daiquiri </li>
+                        <li>Cranberry Spritzer </li>
+                        <li>Virgin Mojito</li>
+                        <li>Virgin Mary </li>
+                        <li>Virgin Gin Fizz  </li>
+                        <li>Virgin Whiskey Sour  </li>
+                        <li>Virgin Old Fashioned </li>
+                        <li>Virgin Bellini </li>
+                        <li>Virgin Mimosa </li>
+                        <li>Virgin Ginger Fizz </li>
+                        <li>Virgin Lime Rickey</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><br>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h4 style="text-align: justify;"><b> - Let me know if you'd like me to add or modify anything!</b></h4>
+        </div>
+    </div>
+</div>
+</section><br><br>
+
+<footer class="bg-dark">
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4>@ 2024 Cafe/Coffee Shop . All Copy Rights Reserved. </h4>
+    </div>
+</div>
+</footer>
+</body>
+</html>

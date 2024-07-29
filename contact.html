@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="bootstrap.css">
+	<script src="jquery.js"></script>
+	<script src="popper.js"></script>
+	<script src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script  type="text/javascript" src="contact.js"></script>
+	<style type="text/css">
+		label{
+			font-weight: bolder;
+			font-size: 18px;
+		}
+
+		span{
+			font-style: italic;
+			color: red;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/logo4-removebg-preview.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 70px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-info" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item" ><a class="nav-link"  href="index.html" style="width: 120px; text-align: center;">Home</a></li>
+					<li class="nav-item"><a class="nav-link"  href="cafe menu.html" style="width: 120px; text-align: center;">CAFE MENU</a></li>
+					<li class="nav-item"><a class="nav-link"  href="service.html" style="width: 140px; text-align: center;">SERVICES</a></li>
+					<li class="nav-item"><a class="nav-link"  href="product.html" style="width: 120px; text-align: center;">PRODUCTS</a></li>
+					<li class="nav-item"><a class="nav-link"  href="gallery.html" style="width: 130px; text-align: center;">GALLERY</a></li>
+					<li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;" ><a class="nav-link"  href="contact.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav><br>
+
+	<section>
+		<div class="container">
+			<div class="contact" style="border:3px solid brown; border-radius: 20px;">
+				<div class="row">
+					<div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 mx-auto">
+						<form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()"  action="product.html" style="padding-bottom: 20px;">
+							<div class="form-group">
+						      	<label for="Fname">First Name: &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Fname" placeholder="Enter First Name" name="Fname" required=""><span id="Fnamemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label for="Lname">Last Name: &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Lname" placeholder="Enter Last Name" name="Lname" required=""><span id="Lnamemsg" required=""></span>
+						    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+
+						    <div class="form-group">
+						     	<label for="Mnumber">Mobile No: &nbsp;&nbsp;&nbsp;</label>
+						      	<input type="number" class="form-control" id="Mnumber" placeholder="Enter Mobile No" name="Mnumber" required=""> <span id="mobilemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required=""> <span id="emailmsg"></span>
+						    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+
+						    <div class="form-group">
+						      	<label for="city">City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="city" placeholder="Enter City" name="city" required=""> <span id="citymsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label for="state">State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="state" placeholder="Enter State" name="state" required=""> <span id="statemsg"></span>
+						    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br>
+
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Message: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="enter message here.." rows="4" cols="68"></textarea>
+							</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="btn">
+								<br>
+								<input style="font-size: 18px; width: 120px; background: #77b300; border:1px solid #77b300;"  type="submit" name="" value="SUBMIT" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+						        <input style="font-size: 18px; width: 120px;" type="Reset" name="" value="RESET" class="btn btn-danger">
+							</div>
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</section><br> 
+
+	<footer class="bg-dark">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>@ 2024 Cafe/Coffee Shop . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+
+	</section>
+
+    
+</body>
+</html>
